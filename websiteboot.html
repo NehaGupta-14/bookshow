@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookSaw</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <link rel="stylesheet" href="bookies.css">
+</head>
+
+
+<body>
+    <!-- header -->
+
+    <div class="header-bar">
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-behance"></i>
+        </div>
+        <div class="account-cart">
+            <!-- Account Section -->
+            <div class="account">
+                <i class="far fa-user"></i> Account
+            </div>
+
+            <!-- Cart Section -->
+            <div class="cart">
+                <i class="far fa-clipboard"></i> Cart: (0 $)
+            </div>
+
+            <!-- Search Section -->
+            <div class="search-container">
+                <input type="search bar" class="search-input" placeholder="">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light  shadow-sm">
+
+        <div class="footer-item" id="navbar">
+            <img src="assets/main-logo.png" alt="logo" class="footer-logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#" style="color:#daa556 ;">Home</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarNav" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarNav">
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Our store</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="#">Thankyou</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Featured</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Offer</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Download App</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Container Starts Here -->
+    <div class="container-fluid">
+        <!-- firstpage Section with Carousel Fade Effect -->
+
+        <section class=" firstpage py-4 text-center text-lg-start">
+            <div id="firstpageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0 px-lg-5">
+                                <h1 id="fp">Life Of The Wild</h1>
+                                <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas
+                                    praesentium dolore perferendis commodi delectus aperiam rerum dolorum saepe quam,
+                                    illo cum doloribus eius ipsa natus, cupiditate nemo.</p>
+                                <div class="text-center custom-paragraph" id="fp1">
+                                    <a href="#" class="btn btn-outline-accent">Read More →</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 text-center">
+                                <img src="assets/main-banner1.jpg" alt="Life Of The Wild"
+                                    class="img-fluid rounded shadow-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12 col-sm-12 px-lg-5">
+                                <h1 id="fps">Adventures in the Desert</h1>
+                                <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis quod
+                                    minus quo eveniet nihil culpa! Officiis eveniet eaque alias ut vel ipsa quae
+                                    deleniti maiores nam illo
+                                </p>
+                                <div class="text-center" id="fp2">
+                                    <a href="#" class="btn btn-outline-accent">Read More →</a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                                <img src="assets/main-banner2.jpg" alt="Adventures in the Desert"
+                                    class="img-fluid rounded shadow-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev custom-carousel-btn" type="button"
+                        data-bs-target="#firstpageCarousel" data-bs-slide="prev" style="margin-right: 100%;">
+                        <span class="custom-carousel-icon">&larr;</span>
+                    </button>
+                    <button class="carousel-control-next custom-carousel-btn" type="button"
+                        data-bs-target="#firstpageCarousel" data-bs-slide="next">
+                        <span class="custom-carousel-icon">&rarr;</span>
+                    </button>
+                </div>
+        </section>
+
+        <!-- Icons Section -->
+        <section class="icons-section  py-5" data-aos="fade-up" id="abc">
+            <div class="row">
+
+                <div class="col-lg-2 col-md-2 col-sm-12 py-4"><img src="assets/client-image1.png" class="img-fluid"
+                        alt="Education">
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 py-4">
+
+                    <img src="assets/client-image2.png" class="img-fluid " alt="Flaprise" height="50px">
+                    </p>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 py-4"><img src="assets/client-image3.png" class="img-fluid"
+                        alt="Bookdoor" height="40px">
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 py-4">
+                    <img src="assets/client-image4.png" class="img-fluid" alt="Bookstore">
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 py-4">
+                    <img src="assets/client-image5.png" class="img-fluid" alt="Library">
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Featured Books Section -->
+        <section class="featured py-4">
+            <div class="section-header align-center">
+                <span class="sub-title">Some Quality Items</span>
+                <div class="title-with-lines">
+                    <span class="line"></span>
+                    <h2>Featured Books</h2>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="product-items">
+                        <figure class="product-styles">
+                            <img src="assets/product-item1.jpg" alt="Books" class="product-items">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>Portrait Photography</h3>
+                            <span>Adam Silber</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span>$ 40.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="product-items">
+                        <figure class="product-styles">
+                            <img src="assets/product-item2.jpg" alt="Books" class="product-items">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>Great travel at desert</h3>
+                            <span>Sanchit Howdy</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span>$ 38.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="product-items">
+                        <figure class="product-styles">
+                            <img src="assets/product-item3.jpg" alt="Books" class="product-items">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>The lady beauty Scarlett</h3>
+                            <span>Arthur Doyle</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span>$ 45.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="product-items">
+                        <figure class="product-styles">
+                            <img src="assets/product-item4.jpg" alt="Books" class="product-items">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>Once upon a time</h3>
+                            <span> Klien Marry</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span> $ 35.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="text-end mt-4">
+                <a href="#" class="btn ">View All Products →</a>
+            </div>
+        </section>
+
+        <!-- Best Selling Book Section -->
+        <section class="best-selling-book py-4">
+
+            <div class="row">
+                <!-- Book Image -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="assets/single-image.jpg" alt="Best Selling Book" class="img-fluid rounded shadow-sm">
+                </div>
+                <!-- Book Details -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="section-title mb-3">Best Selling Book</h2>
+                    <div class="divider"></div>
+                    <h5 class="author mb-2">J.K Rowling</h5>
+                    <h3 class="book-title mb-3">Harry Potter</h3>
+                    <p class="book-description mb-4 custom-paragraphg ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum
+                        enim pharetra hac.
+                    </p>
+                    <h4 class="price mb-4">$ 45.00</h4>
+                    <a href="#" class="btn">Shop It Now →</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Popular Books Section -->
+        <section class="featured-books align-centerpy-4 ">
+
+            <div class="section-header">
+                <span class="sub-titlen">Some Quality Items</span>
+                <div class="title-with-lines">
+                    <span class="line"></span>
+                    <h2>Popular Books</h2>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+
+            <!-- Navbar Section -->
+
+            <ul class="nav" id="bar">
+                <li><a href="#All Genre" class="active tab">All Genre</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Romantic</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Fictional</a></li>
+            </ul>
+
+
+            <!-- Book Cards Row -->
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="product-iteme">
+                        <figure class="product-stylee">
+                            <img src="assets/tab-item1.jpg" alt="Books" class="product-iteme">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>Portrait photography</h3>
+                            <span>Adam Silber</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span>$ 40.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+                <!-- Book 2 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="product-iteme">
+                        <figure class="product-stylee">
+                            <img src="assets/tab-item2.jpg" alt="Books" class="product-iteme">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>Once upon a time </h3>
+                            <span>Klien Marry</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span> $ 35.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+                <!-- Book 3 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="product-iteme">
+                        <figure class="product-stylee">
+                            <img src="assets/tab-item3.jpg" alt="Books" class="product-iteme">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>Tips of simple lifestyle</h3>
+                            <span> Bratt Smith</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span>$ 40.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="product-iteme">
+                        <figure class="product-stylee">
+                            <img src="assets/tab-item4.jpg" alt="Books" class="product-iteme">
+                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                Cart</button>
+                        </figure>
+                        <figcaption>
+                            <h3>Just felt from outside</h3>
+                            <span>Nicole Wilson</span>
+                            <div class="item-price">
+                                <span class="prev-price"></span>$ 40.00
+                            </div>
+                    </div>
+                    </figcaption>
+                </div>
+                <div class="row">
+                    <!-- Book 1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="product-iteme">
+                            <figure class="product-stylee">
+                                <img src="assets/tab-item5.jpg" alt="Books" class="product-iteme">
+                                <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                    Cart</button>
+                            </figure>
+                            <figcaption>
+                                <h3>Peaceful Enlightment</h3>
+                                <span>Marmik Lama</span>
+                                <div class="item-price">
+                                    <span class="prev-price"></span>$ 40.00
+                                </div>
+                        </div>
+                        </figcaption>
+                    </div>
+                    <!-- Book 2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="product-iteme">
+                            <figure class="product-stylee">
+                                <img src="assets/tab-item6.jpg" alt="Books" class="product-iteme">
+                                <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                    Cart</button>
+                            </figure>
+                            <figcaption>
+                                <h3>Great travel at desert</h3>
+                                <span>Sanchit Howdy</span>
+                                <div class="item-price">
+                                    <span class="prev-price"></span>$ 40.00
+                                </div>
+                        </div>
+                        </figcaption>
+                    </div>
+                    <!-- Book 3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="product-iteme">
+                            <figure class="product-stylee">
+                                <img src="assets/tab-item7.jpg" alt="Books" class="product-iteme">
+                                <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                    Cart</button>
+                            </figure>
+                            <figcaption>
+                                <h3>Life among the pirates</h3>
+                                <span>Armor Ramsey</span>
+                                <div class="item-price">
+                                    <span class="prev-price"></span>$ 40.00
+                                </div>
+                        </div>
+                        </figcaption>
+                    </div>
+                    <!-- Book 4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                        <div class="product-iteme">
+                            <figure class="product-stylee">
+                                <img src="assets/tab-item8.jpg" alt="Books" class="product-iteme">
+                                <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                    Cart</button>
+                            </figure>
+                            <figcaption>
+                                <h3>Simple way of piece life</h3>
+                                <span>Armor Ramsey</span>
+                                <div class="item-price">
+                                    <span class="prev-price"></span>$ 40.00
+                                </div>
+                        </div>
+                        </figcaption>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Quote of the Day Section -->
+        <section class="quote-section py-5 mb-5" id="quote">
+
+            <h2 class="quote-title ">Quote Of The Day</h2>
+            <div class="divider mx-auto my-3 col-lg-12 col-md-12 col-sm-12"></div>
+            <blockquote class="blockquote">
+                <q>“The more that you read, the more things you will know. The more that you learn, the
+                    more places you'll go.”</q>
+                <div class="author-name">Dr. Seuss</div>
+            </blockquote>
+
+        </section>
+
+        <!-- Books With Offer Section -->
+        <section id="special-offer" class="bookshelf pb-5 mb-5">
+
+            <div class="section-header align-center">
+                <div class="title">
+                    <span>Grab your opportunity</span>
+                </div>
+                <h2 class="section-title">Books with offer</h2>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-content">
+                        <div class="product-list" data-aos="fade-up">
+                            <div class="grid product-grid">
+                                <div class="product-item">
+                                    <figure class="product-style">
+                                        <img src="assets/product-item5.jpg" alt="Books" class="product-item">
+                                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                            Cart</button>
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Simple way of piece life</h3>
+                                        <span>Armor Ramsey</span>
+                                        <div class="item-price">
+                                            <span class="prev-price">$ 50.00</span>$ 40.00
+                                        </div>
+                                </div>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-content">
+                        <div class="product-list" data-aos="fade-up">
+                            <div class="grid product-grid">
+                                <div class="product-item">
+                                    <figure class="product-style">
+                                        <img src="assets/product-item6.jpg" alt="Books" class="product-item">
+                                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                            Cart</button>
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Great travel at desert</h3>
+                                        <span>Sanchit Howdy</span>
+                                        <div class="item-price">
+                                            <span class="prev-price">$ 30.00</span>$ 38.00
+                                        </div>
+                                </div>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-content">
+                        <div class="product-list" data-aos="fade-up">
+                            <div class="grid product-grid">
+                                <div class="product-item">
+                                    <figure class="product-style">
+                                        <img src="assets/product-item7.jpg" alt="Books" class="product-item">
+                                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                            Cart</button>
+                                    </figure>
+                                    <figcaption>
+                                        <h3>The lady beauty Scarlett</h3>
+                                        <span>Arthur Doyle</span>
+                                        <div class="item-price">
+                                            <span class="prev-price">$ 35.00</span>$ 45.00
+                                        </div>
+                                </div>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-content">
+                        <div class="product-list" data-aos="fade-up">
+                            <div class="grid product-grid">
+                                <div class="product-item">
+                                    <figure class="product-style">
+                                        <img src="assets/product-item8.jpg" alt="Books" class="product-item">
+                                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+                                            Cart</button>
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Once upon a time</h3>
+                                        <span>Klien Marry</span>
+                                        <div class="item-price">
+                                            <span class="prev-price">$ 25.00</span>$ 35.00
+                                        </div>
+                                </div>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Newsletter Section -->
+        <section class="newsletter-section  py-5">
+
+            <div class="row align-items-center justify-content-center">
+                <!-- Left Column -->
+                <div class="col-lg-6 col-md-6 col-sm-12 text-md-start text-center">
+                    <h2 class="newsletter-title">Subscribe To Our Newsletter</h2>
+                    <div class="dividerp  my-3 col-lg-12 col-md-12 col-sm-12"></div>
+
+                </div>
+                <!-- Right Column -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p class="newsletter-description custom-paragraphs">
+                        Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing
+                        enim pharetra hac.
+                    </p>
+                    <form class="newsletter-form d-flex align-items-center">
+                        <input type="email" class="form-control border-0 border-bottom rounded-0 shadow-none me-2"
+                            placeholder="Enter your email address here" required>
+                        <button class="btn-subscribe">
+                            <span>send</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Latest Articles Section -->
+        <section class=" articles py-4">
+
+
+            <div class="section-header">
+                <span class="sub-titles">READ OUR ARTICLES</span>
+                <div class="title-with-lines">
+                    <span class="line"></span>
+                    <h2>Latest Articles</h2>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Article 1 -->
+                <div class="col-lg-4 col-md-4 col-sm-12" id="art">
+                    <div>
+                        <img src="assets/post-img1.jpg" alt="Article 1">
+                    </div>
+                    <div>
+
+                        <p class="text-muted1">Mar 30, 2021</p>
+                        <h5 class="card-title">Reading books always makes the moments
+                            happy</h5>
+                        <hr class="w-85 mx-auto border-2 border-dark">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <p class="text-muted">Inspiration</p>
+
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12  " id="arti">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-behance"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="col-lg-4 col-md-4 col-sm-12" id="art">
+                    <div>
+                        <img src="assets/post-img2.jpg" alt="Article 1">
+                    </div>
+                    <div>
+
+                        <p class="text-muted1">Mar 29, 2021</p>
+                        <h5 class="card-title">Reading books always makes the moments
+                            happy</h5>
+                        <hr class="w-85 mx-auto border-2 border-dark">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <p class="text-muted">Inspiration</p>
+
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12  " id="arti">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-behance"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-12" id="art">
+                    <div>
+                        <img src="assets/post-img3.jpg" alt="Article 1">
+                    </div>
+                    <div>
+
+                        <p class="text-muted1">Fab 27, 2021</p>
+                        <h5 class="card-title">Reading books always makes the moments
+                            happy</h5>
+                        <hr class="w-85 mx-auto border-2 border-dark">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <p class="text-muted">Inspiration</p>
+
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 " id="arti">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-behance"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn-wrap align-center">
+                    <a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">Read All Articles →
+                        </i></a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- App Download Section -->
+        <section class="app-download-section py-5 " id="download-app">
+
+            <div class="row">
+                <!-- App Image -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="assets/device.png" alt="App Mockup" class="img-fluid rounded">
+                </div>
+                <!-- App Text -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="fw-bold">Download Our App Now!</h2>
+                    <div class="dividerm mb-3"></div>
+                    <p class="text-muted custom-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
+                        nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper
+                        erat ac in suspendisse iaculis.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-dark btn-lg me-2">
+                            <img src="assets/google-play.jpg" alt="Google Play" class="store-badge">
+                        </a>
+                        <a href="#" class="btn btn-dark btn-lg me-2">
+                            <img src="assets/app-store.jpg" alt="App Store" class="store-badge">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer py-5" id="footer">
+
+        <div class="row">
+
+            <!-- Logo & About -->
+            <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="footer-item">
+                    <img src="assets/main-logo.png" alt="logo" class="footer-logo">
+                </div>
+                <p class="text-muted custom-paragraph2 ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
+                    nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna.
+                </p>
+            </div>
+
+
+            <!-- About Us Links -->
+            <div class="col-lg-2 col-md-2 col-sm-6">
+                <h5>About Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">Vision</a></li>
+                    <li><a href="#" class="text-muted">Articles</a></li>
+                    <li><a href="#" class="text-muted">Careers</a></li>
+                    <li><a href="#" class="text-muted">Service Terms</a></li>
+                    <li><a href="#" class="text-muted">Donate</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Discover Links -->
+            <div class="col-lg-2 col-md-2 col-sm-6">
+                <h5>Discover</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">Home</a></li>
+                    <li><a href="#" class="text-muted">Books</a></li>
+                    <li><a href="#" class="text-muted">Authors</a></li>
+                    <li><a href="#" class="text-muted">Subjects</a></li>
+                    <li><a href="#" class="text-muted">Advanced Search</a></li>
+                </ul>
+            </div>
+            <!-- My Account Links -->
+            <div class="col-lg-2 col-md-2 col-sm-6">
+                <h5>My Account</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">Sign In</a></li>
+                    <li><a href="#" class="text-muted">View Cart</a></li>
+                    <li><a href="#" class="text-muted">My Wishlist</a></li>
+                    <li><a href="#" class="text-muted">Track My Order</a></li>
+                </ul>
+            </div>
+            <!-- Help Links -->
+            <div class="col-lg-2 col-md-2 col-sm-6">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">Help Center</a></li>
+                    <li><a href="#" class="text-muted">Report a Problem</a></li>
+                    <li><a href="#" class="text-muted">Suggesting Edits</a></li>
+                    <li><a href="#" class="text-muted">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 " id="last">
+                <p class="text-muted ">&copy; 2022 All rights reserved. Free HTML Template
+                    <a href="https://www.templatesjungle.com/" target="_blank" style="color: #74642F;">TemplatesJungle
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12" id="fit">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
